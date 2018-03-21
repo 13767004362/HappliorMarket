@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--默认是显示-->
+    <item android:drawable="@drawable/show_bg" android:state_selected="false"/>
+    <item android:drawable="@drawable/hide_bg" android:state_selected="true"/>
+    <item android:drawable="@drawable/show_bg"/>
+
+</selector>

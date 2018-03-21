@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">ZKMarket</string>
+
+    <string name="loading_failed">加载失败,请重新刷新试试</string>
+    <string name="footter_loading">正在加载...</string>
+    <string name="load_error">加载失败,点击重试</string>
+    <string name="no_data">暂无数据</string>
+    <string name="download_manage">下载管理</string>
+    <string name="downloading">下载中</string>
+    <string name="finished">已完成</string>
+
+
+    <string name="net_error">网络异常，请求设置网络</string>
+    <string name="not_enough_memory">您的存储空间已不足,请清理后再下载</string>
+    <string name="re_download_file">安装文件已不存在，正在重新下载</string>
+    <string name="cancle">取    消</string>
+    <string name="detials">详情</string>
+    <string name="install_all">全部安装</string>
+
+
+    <!-- 下载按钮各种状态所对应的状态文本 -->
+    <string-array name="app_state_texts">
+        <item>等 待</item>
+        <item>暂 停</item>
+        <item>继 续</item>
+        <item>安 装</item>
+        <item>重 试</item>
+        <item>下 载</item>
+        <item>打 开</item>
+        <item>更 新</item>
+    </string-array>
+
+    <!-- 下载按钮各种状态所对应的颜色值 -->
+    <string-array name="app_state_colors">
+        <item>#0077a8</item>
+        <item>#0077a8</item>
+        <item>#925300</item>
+        <item>#f5a133</item>
+        <item>#925300</item>
+        <item>#498fd0</item>
+        <item>#4ea95c</item>
+        <item>#65d3ff</item>
+    </string-array>
+</resources>

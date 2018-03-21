@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/mine_app_top_bg"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/space_48"
+        android:background="@drawable/market_bottom_bg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/mine_app_show_or_hide_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_32"
+        android:paddingTop="@dimen/space_3"
+        android:paddingBottom="@dimen/space_3"
+        android:background="@drawable/show_or_hide_bg_selector"
+        android:gravity="center"
+        android:text="隐藏"
+        android:textColor="@drawable/show_or_hide_text_selector"
+        android:textSize="@dimen/text_size_20"
+        app:layout_constraintBottom_toBottomOf="@id/mine_app_top_bg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/mine_app_top_bg"/>
+
+    <TextView
+        android:id="@+id/mine_app_manage_or_cancel_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/space_32"
+        android:background="@drawable/show_or_hide_bg_selector"
+        android:gravity="center"
+        android:text="管理"
+        android:paddingTop="@dimen/space_3"
+        android:paddingBottom="@dimen/space_3"
+        android:textColor="@drawable/show_or_hide_text_selector"
+        android:textSize="@dimen/text_size_20"
+        app:layout_constraintBottom_toBottomOf="@id/mine_app_top_bg"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/mine_app_top_bg"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fragment_mine_app_recycler_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@mipmap/app_item_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mine_app_top_bg"/>
+</android.support.constraint.ConstraintLayout>

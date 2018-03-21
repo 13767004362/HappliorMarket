@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/soft_list_item_lay"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/grid_item_selector">
+
+    <!-- icon -->
+    <ImageView
+        android:id="@+id/soft_list_app_icon"
+        style="@style/listIconStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <!-- 应用名称 -->
+    <TextView
+        android:id="@+id/soft_list_app_name"
+        style="@style/listNameStyle"
+        android:layout_marginStart="@dimen/space_14"
+        android:layout_marginTop="10dp"
+        android:text="58同城"
+        app:layout_constraintLeft_toRightOf="@id/soft_list_app_icon"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <!--大小-->
+    <TextView
+        android:id="@+id/soft_list_size_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_14"
+        android:layout_marginTop="@dimen/space_5"
+        android:text="13.5MB"
+        android:textColor="@color/list_soft_describe_color"
+        android:textSize="@dimen/text_size_16"
+        app:layout_constraintBottom_toTopOf="@+id/soft_list_describe_text"
+        app:layout_constraintLeft_toRightOf="@id/soft_list_app_icon"
+        app:layout_constraintTop_toBottomOf="@id/soft_list_app_name"/>
+
+    <!-- 描述 -->
+    <TextView
+        android:id="@+id/soft_list_describe_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_10"
+        android:layout_marginStart="@dimen/space_14"
+        android:text="不平凡的App,有你意想不到的折扣"
+        android:textColor="@color/list_soft_describe_color"
+        android:textSize="@dimen/text_size_18"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/soft_list_app_icon"/>
+
+    <!-- 下载按钮 -->
+    <com.zhongke.market.gui.view.download.DownloadProgressButton
+        android:id="@+id/soft_list_download_btn"
+        android:layout_width="@dimen/space_73"
+        android:layout_height="@dimen/space_36"
+        android:layout_marginEnd="@dimen/space_25"
+        app:layout_constraintBottom_toBottomOf="@id/soft_list_size_text"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/soft_list_app_name"/>
+
+</android.support.constraint.ConstraintLayout>

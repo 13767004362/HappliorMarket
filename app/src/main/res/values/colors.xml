@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="title_bg">#1cbf61</color>
+    <color name="white">#FFFFFF</color>
+    <color name="title_bottom_line">#e3e3e3</color>
+
+    <color name="list_download_btn_downloading_color">#79abda</color>
+    <color name="list_download_btn_stop_color">#f5a233</color>
+    <color name="list_download_btn_open_color">#b5b5b5</color>
+    <color name="manager_item_select_color">#fbfbfb</color>
+    <color name="list_name_color">#1b1b1b</color>
+    <color name="list_describle_color">#999999</color>
+    <color name="light_red_color">#f88889</color>
+    <color name="list_soft_describe_color">#ae7943</color>
+    <color name="main_color">#f8f8f8</color>
+    <color name="drag_item_bg">#88ffffff</color>
+
+    <drawable name="divider_color">#dddddd</drawable>
+    <drawable name="white">#ffffff</drawable>
+    <drawable name="normal">#ff00ff</drawable>
+    <drawable name="transparent">#00000000</drawable>
+    <color name="show_color">#ffffff</color>
+    <color name="hide_color">#63321f</color>
+</resources>

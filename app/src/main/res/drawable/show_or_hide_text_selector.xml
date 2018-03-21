@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--默认是显示-->
+    <item android:color="@color/show_color" android:state_selected="false"/>
+    <item android:color="@color/hide_color" android:state_selected="true"/>
+    <item android:color="@color/show_color"/>
+
+</selector>

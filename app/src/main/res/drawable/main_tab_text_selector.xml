@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--默认是显示-->
+    <item android:color="#ceaa8a" android:state_selected="false"/>
+    <item android:color="#fee3bd" android:state_selected="true"/>
+    <item android:color="#ceaa8a"/>
+
+</selector>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+    <com.zhongke.market.gui.view.BaseTitleView
+        android:id="@+id/base_title_lay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"/>
+    <!--加载视图-->
+    <RelativeLayout
+        android:id="@+id/base_loading_lay"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/base_title_lay"
+        android:layout_centerInParent="true">
+
+        <ProgressBar
+            style="@style/myProgressBarStyleLarge"
+            android:layout_width="@dimen/space_30"
+            android:layout_height="@dimen/space_30"
+            android:layout_centerInParent="true"
+            android:indeterminate="false"
+            android:indeterminateBehavior="repeat"
+            android:indeterminateDuration="900"
+            android:indeterminateOnly="true"/>
+
+    </RelativeLayout>
+
+    <!-- 加载失败视图-->
+    <RelativeLayout
+        android:id="@+id/base_error_lay"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/base_title_lay"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableTop="@mipmap/ic_page_error"
+            android:drawablePadding="@dimen/space_5"
+            android:text="@string/load_error"/>
+    </RelativeLayout>
+
+    <!-- 无数据视图-->
+    <RelativeLayout
+        android:id="@+id/base_no_data_lay"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/base_title_lay"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableTop="@mipmap/ic_page_error"
+            android:drawablePadding="@dimen/space_5"
+            android:text="@string/no_data"/>
+    </RelativeLayout>
+
+    <!-- 显示内容视图部分-->
+    <RelativeLayout
+        android:id="@+id/base_content_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/base_title_lay"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

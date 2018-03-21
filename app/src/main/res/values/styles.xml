@@ -1,0 +1,86 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="myProgressBarStyleLarge">
+        　　
+        <item name="android:indeterminateDrawable">@drawable/progress_bg</item>
+        　　
+        <item name="android:minWidth">@dimen/space_30</item>
+        　　
+        <item name="android:maxWidth">@dimen/space_30</item>
+        　　
+        <item name="android:minHeight">@dimen/space_30</item>
+        　　
+        <item name="android:maxHeight">@dimen/space_30</item>
+    </style>
+
+    <!-- 列表icon的统一样式 -->
+    <style name="listIconStyle">
+        <item name="android:layout_width">@dimen/list_icon_width</item>
+        <item name="android:layout_height">@dimen/list_icon_height</item>
+        <item name="android:layout_marginLeft">22dp</item>
+        <item name="android:layout_marginTop">5.3dp</item>
+        <item name="android:layout_marginBottom">15.3dp</item>
+        <item name="android:src">@mipmap/default_icon</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <!-- 列表应用名称的统一样式 -->
+    <style name="listNameStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/list_name_color</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <!-- 列表应用大小描述的统一样式1 -->
+    <style name="listSizeDesStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/list_describle_color</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <!-- 线条样式下载进度条 -->
+    <style name="progressBarLineStyle" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:maxHeight">2dp</item>
+        <item name="android:minHeight">2dp</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">
+            @android:drawable/progress_indeterminate_horizontal
+        </item>
+        <item name="android:progressDrawable">@drawable/progress_line_bg</item>
+    </style>
+
+    <!-- 列表item的样式 -->
+    <style name="listItemStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">91dp</item>
+        <item name="android:background">@drawable/grid_item_selector</item>
+        <item name="android:paddingBottom">5.3dp</item>
+        <item name="android:paddingTop">15.3dp</item>
+    </style>
+
+    <!-- 列表应用大小描述的统一样式2 -->
+    <style name="listDescribeStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">@color/list_soft_describe_color</item>
+        <item name="android:textSize">18.3sp</item>
+    </style>
+
+</resources>
